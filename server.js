@@ -3,11 +3,18 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const db = require('./db');
+const path = require('path');
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "clinet/build")));
+}
+
+console.log(path.join(__dirname, "clinet/build"));
 
 // Get all restaurants
 app.get('/api/v1/restaurants', async (req, res) => {
