@@ -9,7 +9,7 @@ const devConfig = {
 };
 
 const proConfig = {
-  connectionString: process.env.DATBASE_URL
+  connectionString: process.env.DATABASE_URL
 }
 
 const pool = new Pool(
