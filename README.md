@@ -3,7 +3,7 @@ Yelp clone app built with React, Node.js, Express and PostgreSQL.
 
 ## Table of contents 
 * [Demo](#demo)
-* [General ino](#general-info)
+* [General info](#general-info)
 * [Technologies](#technologies)
 * [RESTful API](#restful-api)
 
